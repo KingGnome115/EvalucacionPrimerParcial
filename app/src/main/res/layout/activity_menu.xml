@@ -63,6 +63,44 @@
                     android:text="@string/acercaDe"/>
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btnMenuLinterna"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/linterna"
+                    android:text="@string/acercaDe" />
+                <ImageButton
+                    android:id="@+id/btnMenuPestanias"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/random"
+                    android:text="@string/acercaDe"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btnMenuSalida"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/salida"
+                    android:text="@string/acercaDe" />
+            </LinearLayout>
+
 
 
         </LinearLayout>

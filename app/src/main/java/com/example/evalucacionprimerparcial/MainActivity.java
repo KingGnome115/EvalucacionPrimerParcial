@@ -11,8 +11,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final String USUARIO="Gnomo115";
-    private final String PASSWORD = "123";
+    private final String USUARIO="";
+    private final String PASSWORD = "";
 
     private Button btnAceptar;
     private Button btnSalir;

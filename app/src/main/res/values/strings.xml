@@ -7,4 +7,7 @@
     <string name="password">Contraseña</string>
     <string name="acercaDe">Acerca de</string>
     <string name="television">Television</string>
+    <string name="play">Play</string>
+    <string name="pause">Pausa</string>
+    <string name="siguiente">Siguiente</string>
 </resources>

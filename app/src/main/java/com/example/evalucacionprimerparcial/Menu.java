@@ -3,6 +3,7 @@ package com.example.evalucacionprimerparcial;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -31,6 +32,14 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 getCreditos();
+            }
+        });
+
+        btnTelevision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this, Television.class);
+                startActivity(intent);
             }
         });
 

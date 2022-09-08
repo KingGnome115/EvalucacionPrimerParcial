@@ -29,8 +29,7 @@
                     android:layout_weight="1"
                     android:scaleType="fitCenter"
                     android:src="@drawable/foto"
-                    android:text="@string/acercaDe"
-                    />
+                    android:text="@string/acercaDe" />
                 <ImageButton
                     android:id="@+id/btnMenuTelevision"
                     android:layout_width="15dp"
@@ -38,9 +37,30 @@
                     android:layout_weight="1"
                     android:scaleType="fitCenter"
                     android:src="@drawable/television"
-                    android:text="@string/acercaDe"
-                    />
+                    android:text="@string/acercaDe"/>
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btnMenuGeleria"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/galeria"
+                    android:text="@string/acercaDe" />
+                <ImageButton
+                    android:id="@+id/btnMenuCamara"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/camara"
+                    android:text="@string/acercaDe"/>
             </LinearLayout>
 
 

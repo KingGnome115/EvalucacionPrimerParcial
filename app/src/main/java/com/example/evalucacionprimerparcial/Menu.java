@@ -16,6 +16,7 @@ public class Menu extends AppCompatActivity {
     private ImageButton btnAcercaDe;
     private ImageButton btnTelevision;
     private ImageButton btnGaleria;
+    private ImageButton btnCamara;
     private ImageButton btnLinterna;
     private ImageButton btnPestanias;
     private ImageButton btnSalida;
@@ -29,6 +30,7 @@ public class Menu extends AppCompatActivity {
         btnAcercaDe = findViewById(R.id.btnMenuAcercaDe);
         btnTelevision = findViewById(R.id.btnMenuTelevision);
         btnGaleria = findViewById(R.id.btnMenuGeleria);
+        btnCamara = findViewById(R.id.btnMenuCamara);
         btnLinterna = findViewById(R.id.btnMenuLinterna);
         btnPestanias = findViewById(R.id.btnMenuPestanias);
         btnSalida = findViewById(R.id.btnMenuSalida);
@@ -83,6 +85,21 @@ public class Menu extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
+            }
+        });
+
+        btnCamara.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this, CamaraP.class);
+                startActivity(intent);
+            }
+        });
+
+        btnPestanias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
     }

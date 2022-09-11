@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Kevin/Documents/Programacion_Movil/EvalucacionPrimerParcial/app/src/main/res/drawable/ic_back.xml" value="0.1245" />
+        <entry key="..\:/Users/Kevin/Documents/Programacion_Movil/EvalucacionPrimerParcial/app/src/main/res/drawable/ic_next.xml" value="0.1245" />
         <entry key="..\:/Users/Kevin/Documents/Programacion_Movil/EvalucacionPrimerParcial/app/src/main/res/layout/activity_main.xml" value="0.15625" />
         <entry key="..\:/Users/Kevin/Documents/Programacion_Movil/EvalucacionPrimerParcial/app/src/main/res/layout/activity_menu.xml" value="0.22" />
-        <entry key="..\:/Users/Kevin/Documents/Programacion_Movil/EvalucacionPrimerParcial/app/src/main/res/layout/activity_television.xml" value="0.16927083333333334" />
+        <entry key="..\:/Users/Kevin/Documents/Programacion_Movil/EvalucacionPrimerParcial/app/src/main/res/layout/activity_television.xml" value="0.6" />
       </map>
     </option>
   </component>

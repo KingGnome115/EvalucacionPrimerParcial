@@ -3,7 +3,10 @@ package com.example.evalucacionprimerparcial;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.hardware.camera2.CameraAccessException;
+import android.hardware.camera2.CameraManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -17,6 +20,8 @@ public class Menu extends AppCompatActivity {
     private ImageButton btnPestanias;
     private ImageButton btnSalida;
 
+    private boolean encendia = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +32,9 @@ public class Menu extends AppCompatActivity {
         btnLinterna = findViewById(R.id.btnMenuLinterna);
         btnPestanias = findViewById(R.id.btnMenuPestanias);
         btnSalida = findViewById(R.id.btnMenuSalida);
+
+        CameraManager cameraManager = (CameraManager) getSystemService(Context.CAMERA_SERVICE);
+        final String[] cameraId = {null};
 
         btnAcercaDe.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +59,32 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+        btnLinterna.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!encendia)
+                {
+                    try
+                    {
+                        cameraId[0] = cameraManager.getCameraIdList()[0];
+                        cameraManager.setTorchMode(cameraId[0], true);
+                        encendia = true;
+
+                    }catch (CameraAccessException e){
+                        e.printStackTrace();
+                    }
+                }else{
+                    try
+                    {
+                        cameraId[0] = cameraManager.getCameraIdList()[0];
+                        cameraManager.setTorchMode(cameraId[0], false);
+                        encendia = false;
+                    }catch (CameraAccessException e){
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
     }
 
     private void getCreditos() {

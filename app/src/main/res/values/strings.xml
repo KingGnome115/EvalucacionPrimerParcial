@@ -13,4 +13,7 @@
     <string name="menuTele">Opciones de television</string>
     <string name="atras">Atras</string>
     <string name="buscar">Buscar en Galeria</string>
+    <string name="barra">Barra</string>
+    <string name="gps">Ubicacion</string>
+    <string name="hora">Hora</string>
 </resources>
